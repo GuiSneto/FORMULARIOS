@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+
+		<script>
+            function mostrarSoma() {
+                value1 = document.getElementById("value1").value;
+                value2 = document.getElementById("value2").value;
+
+        
+            
+
+				if(value1 == ""){
+					alert('É necessario digitar um valor');
+				}
+
+                else if(value2 == ""){
+					alert('É necessario digitar um valor');
+				}
+     
+				else {
+                    soma = (value1/1 + value2/1);
+
+                    document.getElementById("value3").value = soma;
+            }
+        }
+
+
+
+            function mostrarSub() {
+                value1 = document.getElementById("value1").value;
+                value2 = document.getElementById("value2").value;
+
+
+            
+
+
+				if(value1 == ""){
+					alert('É necessario digitar um valor');
+				}
+
+                else if(value2 == ""){
+					alert('É necessario digitar um valor');
+				}
+     
+				else {
+                    sub = (value1/1 - value2/1);
+                    document.getElementById("value3").value = sub;
+            }
+        }
+
+            function mostrarDiv() {
+                value1 = document.getElementById("value1").value;
+                value2 = document.getElementById("value2").value;
+
+            
+
+
+
+				if(value1 == ""){
+					alert('É necessario digitar um valor');
+				}
+
+                else if(value2 == ""){
+					alert('É necessario digitar um valor');
+				}
+				
+                
+                else if(value2 == "0" | value2 == 0)
+					alert('É necessario digitar um valor diferente de 0');
+				
+
+     
+				else {
+                    div = ((value1/1) / (value2/1));
+                    document.getElementById("value3").value = div;
+                    }
+        
+
+         }
+
+
+         function mostrarMulti() {
+                value1 = document.getElementById("value1").value;
+                value2 = document.getElementById("value2").value;
+
+            
+
+				if(value1 == ""){
+					alert('É necessario digitar um valor');
+				}
+
+                else if(value2 == ""){
+					alert('É necessario digitar um valor');
+				}
+
+     
+				else {
+                    multi = ((value1/1) * (value2/1));
+                    document.getElementById("value3").value = multi;
+            }
+        }
+
+        
+		</script>
+		<title>Calculo nota</title>
+	</head>
+	<body>
+		<br>
+        <label for="value1">1º Valor</label>
+        <input type="text" id="value1" >
+        
+        <br> 
+        <label for="value2">2º Valor</label>
+		<input type="text" id="value2"><br><br>
+
+        <input type="button"  value="+" onclick="mostrarSoma()">
+        <input type="button"  value="-" onclick="mostrarSub()">
+        <input type="button"  value="/" onclick="mostrarDiv()">
+        <input type="button"  value="*" onclick="mostrarMulti()">
+
+
+        <br><br>    
+        <label for="value3">Resultado </label>
+		<input type="text" id="value3"><br>
+
+
+
+		
+
+	</body>
+</html>

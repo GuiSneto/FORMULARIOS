@@ -1,0 +1,29 @@
+
+button.btn {
+  background-color:lightgreen;
+  display:block;
+  margin:0 auto;
+  width:210px;
+  height:38px;
+  margin-top:15px;
+  font-size:18px;
+  
+}
+button.btn:hover{
+  width:220px;
+  height:42px;
+  font-size:21px;
+  font-style:bold;
+}
+.center{
+	text-align:center;
+	
+}
+.formpro {
+	text-align:right;
+}
+
+
+legend{
+	color:blue;
+}

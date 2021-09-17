@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+
+		<script>
+            function mostrarDobro() {
+                value1 = document.getElementById("value1").value;
+                dobro = value1 * 2;
+                document.getElementById("value2").value = dobro;
+            }
+
+			
+		</script>
+		<title>Mostrar Dobro</title>
+	</head>
+	<body>
+		<br>
+        <label for="value1">Digite um valor: </label>
+        <input type="text" id="value1">
+        <br><br>
+
+        <input type="button"  value="Mostrar Dobro" onclick="mostrarDobro()">
+        
+        <br><br>    
+        <label for="value2">Dobro do valor: </label>
+		<input type="text" id="value2"><br>
+
+
+
+		
+
+	</body>
+</html>
