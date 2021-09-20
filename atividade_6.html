@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8" />
+
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		
+		<style>
+			body {
+				background-color: #d6d6d6;
+			}
+
+			.d-flex-justify-content-right {
+				text-align:left;
+				display: flex;
+				justify-content: center;
+			}
+			label {
+				text-align:left;
+				display: flex;
+
+			}
+
+			.center {
+				text-align:center;
+				justify-content: center;
+			}
+
+			
+			.left {
+				text-align:left;
+				justify-items: left;
+
+			}
+			.right {
+				text-align:right;
+				justify-items:right;
+
+			}
+			legend {
+				color: rgb(5, 5, 99);
+				font-weight: bold;
+				font-size: 25px;	
+			}
+		fieldset {
+			border-style: solid;
+			border-width: 3px;
+			border-color: rgb(5, 5, 99);
+			background-color: #f2eeee;
+			
+		}
+		.tam {
+			width: 280px;
+		}
+		textarea{
+			display: right;
+
+		}
+
+		.alin{
+			margin-left: 12px;
+
+}
+
+
+
+
+	
+
+		</style>
+
+		<script>
+			function verificar() {
+            // Obter todas os inputs do document
+            vet_inputs = document.getElementsByTagName("input");
+			var objRadio = document.getElementsByName("sexo");
+			var estadoCivil = document.getElementById("estCivil");
+			i == 100;
+
+
+
+            for (i=0; i<vet_inputs.length; i++){
+                if ((vet_inputs[i].type == "text") && (vet_inputs[i].value == "")) {
+                    alert(`O campo ${vet_inputs[i].id} está vazio!!!`);
+					break;
+					var i = 90;
+                }
+
+				else if ((vet_inputs[i].type == "radio") && (objRadio[0].checked == false) && (objRadio[0].checked) == false){
+            	alert(`O campo Sexo está vazio!!!`);
+				var i = 90;
+				break;
+			}
+
+
+					
+					if((estadoCivil.options[estadoCivil.selectedIndex].value =="0")){
+						alert(`O campo Estado Civil não foi selecionado!!!`);
+						break;
+						i == 90;
+					}
+
+					else if (document.getElementById("txtComent").value == ""){
+						alert(`O campo Comentários está vazio`)
+						break;
+					}
+
+
+
+
+
+
+			
+			}
+
+
+		}
+	
+
+	
+
+
+
+
+
+
+
+			
+		</script>
+		<title>FORMULÁRIO</title>
+	</head>
+
+
+	<body>
+		<div class="d-flex-justify-content-right">
+			<fieldset>
+				<legend class="center">FORMULÁRIO</legend>
+					<form>
+
+						<label for="Nome">Nome:</label>
+						<input type="text" size="35" id="Nome">
+					
+						<br><br>
+
+						<label for="Endereco">Endereço:</label>
+						<input type="text" size="35" id="Endereco">
+					
+						<br><br>
+
+						<label for="Telefone">Telefone:</label>
+						<input type="text" size="35" id="Telefone">
+					
+						<br><br>
+
+						<label for="Cidade">Cidade:</label>
+						<input type="text" size="35" id="Cidade">
+
+						<br><br>
+
+						<label for="E-mail">E-mail:</label>
+						<input type="text" size="35" id="E-mail">
+					
+						<br><br>
+						<div class="left">
+							<label for="sexoM">
+								<span>Masculino:</span>
+								<input type="radio" name="sexo" id="sexoM">
+							</label>
+							<label for="sexoF">
+								<span>Feminino:</span>
+								<input class="alin" type="radio" name="sexo" id="sexoF">
+							</label>
+							<br>
+					
+					
+							<label for="estadoCivil">Estado Civil:</label>
+        					<select class="tam" name="estCivil" id="estCivil" >
+            					<option value="0">Selecione</option>
+            					<option value="1">Casado</option>
+            					<option value="2">Solteiro</option>
+            					<option value="3">Divorciado</option>
+            					<option value="4">Viúvo</option>
+        					</select>
+						<div>
+
+						<br>
+
+						<p for ="txtComent">Comentários: </p>
+						<textarea cols=37.5 id="txtComent" rows="5" maxlength="500" wrap="hard" placeholder="Escreva aquiseu comentário!"></textarea>
+						
+
+					<div class="center">
+						<br><input type="submit" value="Validar" onclick="verificar()" >
+						<input type="reset" value="Limpar">
+					</div>
+
+				</form>
+			</fieldset>
+		</div>
+
+
+
+	</body>
+
+
+
+	</body>
+</html>
